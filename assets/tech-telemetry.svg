@@ -1,27 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 145" width="100%" height="145">
   <defs>
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0e131f" />
-      <stop offset="100%" stop-color="#141926" />
+    <linearGradient id="cardGradClean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090e1a" />
+      <stop offset="100%" stop-color="#0f1626" />
     </linearGradient>
 
-    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00d2ff" />
-      <stop offset="100%" stop-color="#3a7bd5" />
+    <linearGradient id="streamCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
     </linearGradient>
 
-    <linearGradient id="neonViolet" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a855f7" />
-      <stop offset="100%" stop-color="#6366f1" />
+    <linearGradient id="streamIndigo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#4f46e5" />
     </linearGradient>
 
-    <linearGradient id="neonGold" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f59e0b" />
-      <stop offset="100%" stop-color="#c9a84c" />
-    </linearGradient>
-
-    <filter id="telemetryGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <filter id="cleanTelemetryGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
@@ -29,43 +24,34 @@
   <style>
     .mono { font-family: 'SF Mono', 'Fira Code', 'Monaco', monospace; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-    @keyframes radarSweep {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    @keyframes pulseSoft {
-      0%, 100% { opacity: 0.85; }
-      50% { opacity: 0.35; }
-    }
   </style>
 
   <!-- Container Box -->
-  <rect width="900" height="145" rx="12" fill="#080b12" stroke="#1c2438" stroke-width="1.2" />
+  <rect width="900" height="145" rx="12" fill="#050811" stroke="#172033" stroke-width="1.2" />
 
   <!-- ==================== PANEL 1: AI & AGENTS ==================== -->
   <g transform="translate(18, 14)">
-    <rect width="270" height="117" rx="10" fill="url(#cardGrad)" stroke="#232d42" stroke-width="1" />
+    <rect width="270" height="117" rx="10" fill="url(#cardGradClean)" stroke="#1e293b" stroke-width="1" />
     
     <!-- Top Bar -->
     <g transform="translate(16, 20)">
       <!-- Animated Status Dot -->
-      <circle cx="0" cy="0" r="3.5" fill="#38bdf8">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite" />
+      <circle cx="0" cy="0" r="3" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
       </circle>
-      <circle cx="0" cy="0" r="7" fill="none" stroke="#38bdf8" stroke-width="1">
-        <animate attributeName="r" values="3;9;3" dur="1.8s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="0.8;0.1;0.8" dur="1.8s" repeatCount="indefinite" />
+      <circle cx="0" cy="0" r="6.5" fill="none" stroke="#38bdf8" stroke-width="0.8">
+        <animate attributeName="r" values="3;8;3" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.7;0.1;0.7" dur="2s" repeatCount="indefinite" />
       </circle>
-      <text x="14" y="3.5" fill="#38bdf8" class="mono" font-size="10.5" font-weight="700" letter-spacing="1">
+      <text x="14" y="3.5" fill="#38bdf8" class="mono" font-size="10" font-weight="700" letter-spacing="1">
         AI &amp; AGENTIC SYSTEMS
       </text>
     </g>
 
-    <!-- Animated Neural Activity Oscilloscope Wave -->
+    <!-- Animated Oscilloscope Wave -->
     <g transform="translate(16, 42)">
-      <line x1="0" y1="15" x2="238" y2="15" stroke="#1e283d" stroke-width="1" stroke-dasharray="3,3" />
-      <!-- Animated Wave Path -->
-      <path fill="none" stroke="#00d2ff" stroke-width="1.8" filter="url(#telemetryGlow)">
+      <line x1="0" y1="15" x2="238" y2="15" stroke="#192336" stroke-width="1" stroke-dasharray="3,3" />
+      <path fill="none" stroke="#38bdf8" stroke-width="1.6" filter="url(#cleanTelemetryGlow)">
         <animate attributeName="d"
           values="
             M 0,15 Q 30,0 60,15 T 120,15 T 160,-2 T 180,30 T 200,15 T 238,15;
@@ -78,84 +64,75 @@
       </path>
     </g>
 
-    <!-- Subtitle & Focus tags -->
-    <text x="16" y="86" fill="#e2e8f0" class="sans" font-size="12" font-weight="600">NLP · Deep Learning · LLMs</text>
-    <text x="16" y="103" fill="#64748b" class="mono" font-size="10">AUTONOMOUS LOOPS: ACTIVE</text>
+    <text x="16" y="86" fill="#f1f5f9" class="sans" font-size="11.5" font-weight="600">NLP · Deep Learning · Azure AI</text>
+    <text x="16" y="103" fill="#64748b" class="mono" font-size="9.5">QUANTAFORZE ENGINE: ACTIVE</text>
   </g>
 
-  <!-- ==================== PANEL 2: MODERN FULL-STACK ==================== -->
+  <!-- ==================== PANEL 2: HIGH PERFORMANCE WEB ==================== -->
   <g transform="translate(306, 14)">
-    <rect width="288" height="117" rx="10" fill="url(#cardGrad)" stroke="#232d42" stroke-width="1" />
+    <rect width="288" height="117" rx="10" fill="url(#cardGradClean)" stroke="#1e293b" stroke-width="1" />
     
     <!-- Top Bar -->
     <g transform="translate(16, 20)">
-      <!-- Animated Status Dot -->
-      <circle cx="0" cy="0" r="3.5" fill="#a855f7">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite" />
+      <circle cx="0" cy="0" r="3" fill="#818cf8">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite" />
       </circle>
-      <circle cx="0" cy="0" r="7" fill="none" stroke="#a855f7" stroke-width="1">
-        <animate attributeName="r" values="3;9;3" dur="2.2s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="0.8;0.1;0.8" dur="2.2s" repeatCount="indefinite" />
+      <circle cx="0" cy="0" r="6.5" fill="none" stroke="#818cf8" stroke-width="0.8">
+        <animate attributeName="r" values="3;8;3" dur="2.4s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.7;0.1;0.7" dur="2.4s" repeatCount="indefinite" />
       </circle>
-      <text x="14" y="3.5" fill="#c084fc" class="mono" font-size="10.5" font-weight="700" letter-spacing="1">
+      <text x="14" y="3.5" fill="#818cf8" class="mono" font-size="10" font-weight="700" letter-spacing="1">
         FULL-STACK ARCHITECTURE
       </text>
     </g>
 
     <!-- Animated Data Throughput Stream Bars -->
     <g transform="translate(16, 42)">
-      <!-- Channel 1 -->
-      <rect x="0" y="2" width="256" height="5" rx="2.5" fill="#1b2234" />
-      <rect x="0" y="2" width="130" height="5" rx="2.5" fill="url(#neonViolet)">
+      <rect x="0" y="2" width="256" height="4" rx="2" fill="#131d2e" />
+      <rect x="0" y="2" width="130" height="4" rx="2" fill="url(#streamCyan)">
         <animate attributeName="width" values="40;220;90;250;130" dur="4.5s" repeatCount="indefinite" />
       </rect>
-      <!-- Channel 2 -->
-      <rect x="0" y="14" width="256" height="5" rx="2.5" fill="#1b2234" />
-      <rect x="0" y="14" width="180" height="5" rx="2.5" fill="url(#neonCyan)">
+      <rect x="0" y="14" width="256" height="4" rx="2" fill="#131d2e" />
+      <rect x="0" y="14" width="180" height="4" rx="2" fill="url(#streamIndigo)">
         <animate attributeName="width" values="180;70;240;110;180" dur="5s" repeatCount="indefinite" />
       </rect>
     </g>
 
-    <!-- Subtitle & Focus tags -->
-    <text x="16" y="86" fill="#e2e8f0" class="sans" font-size="12" font-weight="600">Next.js · TypeScript · Prisma</text>
-    <text x="16" y="103" fill="#64748b" class="mono" font-size="10">LATENCY: &lt;18ms // TURBO MONO</text>
+    <text x="16" y="86" fill="#f1f5f9" class="sans" font-size="11.5" font-weight="600">Next.js · TypeScript · Prisma</text>
+    <text x="16" y="103" fill="#64748b" class="mono" font-size="9.5">TURBO MONOREPO: SYNCED</text>
   </g>
 
-  <!-- ==================== PANEL 3: CLOUD & DEPLOYMENT ==================== -->
+  <!-- ==================== PANEL 3: CLOUD & ORCHESTRATION ==================== -->
   <g transform="translate(612, 14)">
-    <rect width="270" height="117" rx="10" fill="url(#cardGrad)" stroke="#232d42" stroke-width="1" />
+    <rect width="270" height="117" rx="10" fill="url(#cardGradClean)" stroke="#1e293b" stroke-width="1" />
     
     <!-- Top Bar -->
     <g transform="translate(16, 20)">
-      <!-- Animated Status Dot -->
-      <circle cx="0" cy="0" r="3.5" fill="#f59e0b">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+      <circle cx="0" cy="0" r="3" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite" />
       </circle>
-      <circle cx="0" cy="0" r="7" fill="none" stroke="#f59e0b" stroke-width="1">
-        <animate attributeName="r" values="3;9;3" dur="2s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="0.8;0.1;0.8" dur="2s" repeatCount="indefinite" />
+      <circle cx="0" cy="0" r="6.5" fill="none" stroke="#38bdf8" stroke-width="0.8">
+        <animate attributeName="r" values="3;8;3" dur="1.8s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.7;0.1;0.7" dur="1.8s" repeatCount="indefinite" />
       </circle>
-      <text x="14" y="3.5" fill="#fbbf24" class="mono" font-size="10.5" font-weight="700" letter-spacing="1">
+      <text x="14" y="3.5" fill="#38bdf8" class="mono" font-size="10" font-weight="700" letter-spacing="1">
         CLOUD &amp; CONTAINER INFRA
       </text>
     </g>
 
-    <!-- Animated Circular Radar Scanner & Heartbeat -->
+    <!-- Animated Radar Scanner -->
     <g transform="translate(16, 40)">
-      <!-- Mini Radar Circle -->
-      <g transform="translate(16, 12)">
-        <circle cx="0" cy="0" r="14" fill="#141c2c" stroke="#25324c" stroke-width="1" />
-        <circle cx="0" cy="0" r="8" fill="none" stroke="#25324c" stroke-width="0.8" />
-        <!-- Radar Sweep Needle -->
-        <line x1="0" y1="0" x2="14" y2="0" stroke="#f59e0b" stroke-width="1.6" filter="url(#telemetryGlow)">
-          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.5s" repeatCount="indefinite" />
+      <g transform="translate(14, 12)">
+        <circle cx="0" cy="0" r="13" fill="#0d1524" stroke="#1e293b" stroke-width="1" />
+        <circle cx="0" cy="0" r="7" fill="none" stroke="#1e293b" stroke-width="0.7" />
+        <line x1="0" y1="0" x2="13" y2="0" stroke="#38bdf8" stroke-width="1.4" filter="url(#cleanTelemetryGlow)">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.8s" repeatCount="indefinite" />
         </line>
       </g>
-      <!-- Telemetry Info next to radar -->
-      <text x="42" y="8" fill="#e2e8f0" class="sans" font-size="12" font-weight="600">Azure AI · Docker · Supabase</text>
-      <text x="42" y="24" fill="#64748b" class="mono" font-size="10">CONTAINERS: 100% HEALTHY</text>
+      <text x="38" y="8" fill="#f1f5f9" class="sans" font-size="11.5" font-weight="600">Docker · Supabase · Vite</text>
+      <text x="38" y="24" fill="#64748b" class="mono" font-size="9.5">CONTAINERS: 100% HEALTHY</text>
     </g>
 
-    <text x="16" y="103" fill="#64748b" class="mono" font-size="10">ORCHESTRATION: SYNCED</text>
+    <text x="16" y="103" fill="#64748b" class="mono" font-size="9.5">SERVICES: HIGH AVAILABILITY</text>
   </g>
 </svg>

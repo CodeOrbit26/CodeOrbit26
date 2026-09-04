@@ -1,46 +1,44 @@
-<svg width="900" height="8" viewBox="0 0 900 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="6" viewBox="0 0 900 6" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background subtle track -->
-    <linearGradient id="trackGrad" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#090d16" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#7c6aef" stop-opacity="0.3"/>
-      <stop offset="50%" stop-color="#c9a84c" stop-opacity="0.4"/>
-      <stop offset="80%" stop-color="#38bdf8" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#090d16" stop-opacity="0"/>
+    <!-- Slate Hairline Track -->
+    <linearGradient id="slateTrack" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#05070e" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#1e293b" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.8"/>
+      <stop offset="75%" stop-color="#1e293b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#05070e" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Traveling Laser Beam Gradient -->
-    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7c6aef" stop-opacity="0" />
-      <stop offset="40%" stop-color="#7c6aef" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
-      <stop offset="60%" stop-color="#c9a84c" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0" />
+    <!-- Traveling Ice-Cyan Laser Beam -->
+    <linearGradient id="cyanLaser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#38bdf8" stop-opacity="1" />
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0" />
     </linearGradient>
 
-    <filter id="glowLaser" x="-20%" y="-100%" width="140%" height="300%">
-      <feGaussianBlur stdDeviation="2.5" result="blur" />
+    <filter id="laserBlur" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <!-- Track -->
-  <line x1="0" y1="4" x2="900" y2="4" stroke="url(#trackGrad)" stroke-width="1" />
+  <!-- Base Line -->
+  <line x1="0" y1="3" x2="900" y2="3" stroke="url(#slateTrack)" stroke-width="1" />
 
   <!-- Animated Traveling Laser Beam -->
-  <rect y="2" width="220" height="4" rx="2" fill="url(#laserGrad)" filter="url(#glowLaser)">
-    <animate attributeName="x" values="-220; 900" dur="3.5s" repeatCount="indefinite" />
+  <rect y="1.5" width="180" height="3" rx="1.5" fill="url(#cyanLaser)" filter="url(#laserBlur)">
+    <animate attributeName="x" values="-180; 900" dur="4s" repeatCount="indefinite" />
   </rect>
 
-  <!-- Center Diamond with Pulsing Halo -->
-  <g transform="translate(450, 4)">
-    <circle cx="0" cy="0" r="3" fill="#c9a84c">
-      <animate attributeName="r" values="2.5; 4.5; 2.5" dur="2s" repeatCount="indefinite" />
-      <animate attributeName="fill" values="#c9a84c; #ffffff; #7c6aef; #c9a84c" dur="4s" repeatCount="indefinite" />
+  <!-- Center Diamond Accent -->
+  <g transform="translate(450, 3)">
+    <circle cx="0" cy="0" r="2.5" fill="#38bdf8">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite" />
     </circle>
-    <circle cx="0" cy="0" r="6" fill="none" stroke="#7c6aef" stroke-width="1" opacity="0.6">
-      <animate attributeName="r" values="4; 9; 4" dur="2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.8; 0.1; 0.8" dur="2s" repeatCount="indefinite" />
+    <circle cx="0" cy="0" r="5.5" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.4">
+      <animate attributeName="r" values="3.5;7.5;3.5" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.5s" repeatCount="indefinite" />
     </circle>
   </g>
 </svg>
