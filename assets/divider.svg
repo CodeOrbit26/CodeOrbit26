@@ -1,44 +1,59 @@
-<svg width="900" height="6" viewBox="0 0 900 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="920" height="10" viewBox="0 0 920 10" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Slate Hairline Track -->
-    <linearGradient id="slateTrack" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#05070e" stop-opacity="0"/>
-      <stop offset="25%" stop-color="#1e293b" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#334155" stop-opacity="0.8"/>
-      <stop offset="75%" stop-color="#1e293b" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#05070e" stop-opacity="0"/>
+    <!-- Slate Hairline Track with Soft Center Bloom -->
+    <linearGradient id="dividerTrackGrad" x1="0" y1="0" x2="920" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#04060f" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#1e293b" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.7"/>
+      <stop offset="80%" stop-color="#1e293b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#04060f" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Traveling Ice-Cyan Laser Beam -->
-    <linearGradient id="cyanLaser" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- High-Velocity Photon Pulse Gradient -->
+    <linearGradient id="photonPulse" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9" />
-      <stop offset="70%" stop-color="#38bdf8" stop-opacity="1" />
-      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0" />
+      <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="60%" stop-color="#818cf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
     </linearGradient>
 
-    <filter id="laserBlur" x="-20%" y="-100%" width="140%" height="300%">
-      <feGaussianBlur stdDeviation="2" result="blur" />
+    <filter id="dividerGlow" x="-10%" y="-100%" width="120%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <!-- Base Line -->
-  <line x1="0" y1="3" x2="900" y2="3" stroke="url(#slateTrack)" stroke-width="1" />
+  <!-- Hairline Base Track -->
+  <line x1="0" y1="5" x2="920" y2="5" stroke="url(#dividerTrackGrad)" stroke-width="1.2" />
 
-  <!-- Animated Traveling Laser Beam -->
-  <rect y="1.5" width="180" height="3" rx="1.5" fill="url(#cyanLaser)" filter="url(#laserBlur)">
-    <animate attributeName="x" values="-180; 900" dur="4s" repeatCount="indefinite" />
+  <!-- Animated Traveling Photon Pulse (Forward) -->
+  <rect y="3" width="220" height="4" rx="2" fill="url(#photonPulse)" filter="url(#dividerGlow)">
+    <animate attributeName="x" values="-220; 920" dur="3.6s" repeatCount="indefinite" />
   </rect>
 
-  <!-- Center Diamond Accent -->
-  <g transform="translate(450, 3)">
-    <circle cx="0" cy="0" r="2.5" fill="#38bdf8">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite" />
+  <!-- Animated Traveling Micro-Pulse (Trailing) -->
+  <rect y="3.5" width="80" height="3" rx="1.5" fill="#ffffff" opacity="0.7" filter="url(#dividerGlow)">
+    <animate attributeName="x" values="-100; 920" dur="3.6s" begin="0.3s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Center Quantum Diamond Node with Expanding Ripples -->
+  <g transform="translate(460, 5)">
+    <!-- Expanding Ripple 1 -->
+    <circle cx="0" cy="0" r="3.5" fill="none" stroke="#38bdf8" stroke-width="1">
+      <animate attributeName="r" values="3; 10; 13" dur="2.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8; 0.2; 0" dur="2.2s" repeatCount="indefinite" />
     </circle>
-    <circle cx="0" cy="0" r="5.5" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.4">
-      <animate attributeName="r" values="3.5;7.5;3.5" dur="2.5s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.5s" repeatCount="indefinite" />
+    <!-- Expanding Ripple 2 -->
+    <circle cx="0" cy="0" r="3.5" fill="none" stroke="#818cf8" stroke-width="0.8">
+      <animate attributeName="r" values="3; 8; 11" dur="2.2s" begin="1.1s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7; 0.15; 0" dur="2.2s" begin="1.1s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Core Diamond/Dot -->
+    <circle cx="0" cy="0" r="3" fill="#ffffff" filter="url(#dividerGlow)">
+      <animate attributeName="r" values="2.5; 4; 2.5" dur="2.2s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#ffffff; #38bdf8; #818cf8; #ffffff" dur="4s" repeatCount="indefinite" />
     </circle>
   </g>
 </svg>

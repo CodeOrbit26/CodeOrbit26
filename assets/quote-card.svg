@@ -1,20 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 76" width="100%" height="76">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 80" width="100%" height="80">
   <defs>
-    <linearGradient id="quoteBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#060913" />
-      <stop offset="50%" stop-color="#0a0f1d" />
-      <stop offset="100%" stop-color="#060913" />
+    <!-- Base Gradient -->
+    <linearGradient id="quoteCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="50%" stop-color="#0a1024" />
+      <stop offset="100%" stop-color="#050814" />
     </linearGradient>
 
-    <!-- Subtle traveling shine for quote -->
-    <linearGradient id="quoteTextShine" x1="0%" y1="0%" x2="200%" y2="0%">
-      <stop offset="0%" stop-color="#cbd5e1" />
-      <stop offset="45%" stop-color="#ffffff" />
-      <stop offset="50%" stop-color="#38bdf8" />
-      <stop offset="55%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#cbd5e1" />
-      <animateTransform attributeName="gradientTransform" type="translate" from="-200,0" to="200,0" dur="7s" repeatCount="indefinite" />
+    <!-- Traveling Perimeter Laser -->
+    <linearGradient id="quoteLaser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="1" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="60%" stop-color="#818cf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
     </linearGradient>
+
+    <!-- Shimmering Text Gradient -->
+    <linearGradient id="quoteShimmer" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="40%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="60%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+      <animateTransform attributeName="gradientTransform" type="translate" from="-200,0" to="200,0" dur="6s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <filter id="quoteGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
 
   <style>
@@ -22,19 +36,37 @@
     .mono { font-family: "SF Mono", "Fira Code", "Monaco", monospace; }
   </style>
 
-  <!-- Container Box with clean slate border -->
-  <rect width="900" height="76" rx="10" fill="url(#quoteBg)" stroke="#1e293b" stroke-width="1" />
+  <!-- Base Box -->
+  <rect width="920" height="80" rx="12" fill="url(#quoteCardBg)" stroke="#162035" stroke-width="1.2" />
 
-  <!-- Left Accent Bar with Subtle Cyan Pulse -->
-  <rect x="0" y="8" width="3" height="60" rx="1.5" fill="#38bdf8">
-    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite" />
+  <!-- Animated Traveling Perimeter Laser -->
+  <rect width="920" height="80" rx="12" fill="none" stroke="url(#quoteLaser)" stroke-width="1.5" stroke-dasharray="80 1900" filter="url(#quoteGlow)">
+    <animate attributeName="stroke-dashoffset" values="0; -2000" dur="6s" repeatCount="indefinite" />
   </rect>
 
-  <g transform="translate(450, 30)" text-anchor="middle">
-    <text y="-8" fill="#38bdf8" class="mono" font-size="10" font-weight="700" letter-spacing="2">
-      // ARCHITECTURAL VISION
+  <!-- Ambient Micro Particles in Background -->
+  <g fill="#38bdf8" opacity="0.3">
+    <circle cx="120" cy="25" r="1.5">
+      <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="800" cy="55" r="1.5">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="280" cy="65" r="1.2" fill="#818cf8" />
+    <circle cx="680" cy="20" r="1.2" fill="#818cf8" />
+  </g>
+
+  <!-- Left Accent Glowing Bar -->
+  <rect x="0" y="10" width="3.5" height="60" rx="1.75" fill="#38bdf8" filter="url(#quoteGlow)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Center Typography -->
+  <g transform="translate(460, 32)" text-anchor="middle">
+    <text y="-8" fill="#38bdf8" class="mono" font-size="10" font-weight="700" letter-spacing="2.5">
+      // ARCHITECTURAL THESIS
     </text>
-    <text y="20" fill="url(#quoteTextShine)" class="sans" font-size="14" font-weight="500">
+    <text y="21" fill="url(#quoteShimmer)" class="sans" font-size="14.5" font-weight="500">
       "Architecting autonomous AI workflows and resilient enterprise platforms that bridge theory into production impact."
     </text>
   </g>

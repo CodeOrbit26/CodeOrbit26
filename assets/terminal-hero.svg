@@ -1,17 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 215" width="100%" height="215">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="100%" height="220">
   <defs>
-    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050812" />
-      <stop offset="50%" stop-color="#080d1a" />
-      <stop offset="100%" stop-color="#0b1122" />
+    <!-- Background Gradient -->
+    <linearGradient id="termBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040711" />
+      <stop offset="50%" stop-color="#070c1b" />
+      <stop offset="100%" stop-color="#0a1024" />
     </linearGradient>
 
-    <linearGradient id="termHeader" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0e1526" />
-      <stop offset="100%" stop-color="#141c30" />
+    <!-- Header Gradient -->
+    <linearGradient id="termHeaderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0c1426" />
+      <stop offset="100%" stop-color="#121c33" />
     </linearGradient>
 
-    <filter id="cleanTerminalGlow" x="-10%" y="-10%" width="120%" height="120%">
+    <!-- Traveling Laser for Terminal Perimeter -->
+    <linearGradient id="termBorderLaser" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="1" />
+      <stop offset="40%" stop-color="#818cf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="termGlow" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="2" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
@@ -30,99 +39,108 @@
     }
   </style>
 
-  <!-- Main Terminal Box -->
-  <rect width="900" height="215" rx="12" fill="url(#termBg)" stroke="#1a2438" stroke-width="1.2" />
+  <!-- Container Box -->
+  <rect width="920" height="220" rx="14" fill="url(#termBgGrad)" stroke="#162035" stroke-width="1.2" />
 
-  <!-- Terminal Top Header Bar -->
-  <path d="M 0,12 Q 0,0 12,0 L 888,0 Q 900,0 900,12 L 900,34 L 0,34 Z" fill="url(#termHeader)" />
-  <line x1="0" y1="34" x2="900" y2="34" stroke="#1c283f" stroke-width="1" />
+  <!-- Animated Traveling Laser Beam around Terminal -->
+  <rect width="920" height="220" rx="14" fill="none" stroke="url(#termBorderLaser)" stroke-width="1.5" stroke-dasharray="120 2200" filter="url(#termGlow)">
+    <animate attributeName="stroke-dashoffset" values="0; -2320" dur="7s" repeatCount="indefinite" />
+  </rect>
 
-  <!-- Window Action Buttons -->
-  <circle cx="22" cy="17" r="4.5" fill="#ef4444" opacity="0.85" />
-  <circle cx="36" cy="17" r="4.5" fill="#f59e0b" opacity="0.85" />
-  <circle cx="50" cy="17" r="4.5" fill="#10b981" opacity="0.85" />
+  <!-- Terminal Header Bar -->
+  <path d="M 0,14 Q 0,0 14,0 L 906,0 Q 920,0 920,14 L 920,36 L 0,36 Z" fill="url(#termHeaderGrad)" />
+  <line x1="0" y1="36" x2="920" y2="36" stroke="#1a273f" stroke-width="1" />
 
-  <!-- Terminal Title -->
-  <g transform="translate(450, 21)" text-anchor="middle">
-    <text fill="#64748b" class="mono" font-size="11" font-weight="500">
-      abhay@quantaforze: ~/core-intelligence (zsh)
+  <!-- Window Dots with Soft Glow -->
+  <circle cx="24" cy="18" r="4.5" fill="#ef4444" opacity="0.9" />
+  <circle cx="39" cy="18" r="4.5" fill="#f59e0b" opacity="0.9" />
+  <circle cx="54" cy="18" r="4.5" fill="#10b981" opacity="0.9" />
+
+  <!-- Title Center -->
+  <g transform="translate(460, 22)" text-anchor="middle">
+    <text fill="#64748b" class="mono" font-size="11" font-weight="600">
+      abhay@quantaforze-core: ~/production-cluster (zsh)
     </text>
   </g>
 
-  <!-- Live Branch indicator -->
-  <g transform="translate(820, 21)">
-    <text fill="#38bdf8" class="mono" font-size="10.5" font-weight="600">⎇ production</text>
+  <!-- Right Git Status Pill -->
+  <g transform="translate(815, 14)">
+    <rect width="86" height="18" rx="9" fill="#08101e" stroke="#1e2c44" stroke-width="1" />
+    <circle cx="12" cy="9" r="2.5" fill="#38bdf8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="22" y="12.5" fill="#38bdf8" class="mono" font-size="9.5" font-weight="700">⎇ main*</text>
   </g>
 
-  <!-- Terminal Body Content -->
-  <g transform="translate(26, 60)">
-    <!-- Command 1 Prompt -->
+  <!-- Terminal Content Body -->
+  <g transform="translate(28, 62)">
+    <!-- Command 1 -->
     <text x="0" y="0" fill="#38bdf8" class="mono" font-size="13" font-weight="700">❯</text>
-    <text x="18" y="0" fill="#f8fafc" class="mono" font-size="13" font-weight="600">quantaforze</text>
-    <text x="115" y="0" fill="#64748b" class="mono" font-size="13">--status --inspect</text>
+    <text x="18" y="0" fill="#ffffff" class="mono" font-size="13" font-weight="600">quantaforze</text>
+    <text x="115" y="0" fill="#64748b" class="mono" font-size="13">--status --inspect --live</text>
 
-    <!-- Diagnostics Output Block with crisp colors -->
+    <!-- Diagnostics Output Block -->
     <g transform="translate(18, 22)">
-      <!-- Line 1: Role -->
+      <!-- Line 1: Venture -->
       <g>
         <text x="0" y="0" fill="#10b981" class="mono" font-size="12" font-weight="bold">✔</text>
         <text x="18" y="0" fill="#94a3b8" class="mono" font-size="12">Venture &amp; Role</text>
-        <text x="135" y="0" fill="#475569" class="mono" font-size="12">:</text>
-        <text x="150" y="0" fill="#ffffff" class="mono" font-size="12" font-weight="600">Co-Founder @ Quantaforze</text>
+        <text x="140" y="0" fill="#475569" class="mono" font-size="12">:</text>
+        <text x="155" y="0" fill="#ffffff" class="mono" font-size="12" font-weight="600">Co-Founder @ Quantaforze</text>
       </g>
 
       <!-- Line 2: AI Focus -->
       <g transform="translate(0, 20)">
         <text x="0" y="0" fill="#10b981" class="mono" font-size="12" font-weight="bold">✔</text>
         <text x="18" y="0" fill="#94a3b8" class="mono" font-size="12">AI Architecture</text>
-        <text x="135" y="0" fill="#475569" class="mono" font-size="12">:</text>
-        <text x="150" y="0" fill="#38bdf8" class="mono" font-size="12">Agentic Systems · NLP · Deep Learning · Azure AI</text>
+        <text x="140" y="0" fill="#475569" class="mono" font-size="12">:</text>
+        <text x="155" y="0" fill="#38bdf8" class="mono" font-size="12">Agentic Systems · NLP · Deep Learning · Azure AI</text>
       </g>
 
       <!-- Line 3: Stack -->
       <g transform="translate(0, 40)">
         <text x="0" y="0" fill="#10b981" class="mono" font-size="12" font-weight="bold">✔</text>
         <text x="18" y="0" fill="#94a3b8" class="mono" font-size="12">Engineering</text>
-        <text x="135" y="0" fill="#475569" class="mono" font-size="12">:</text>
-        <text x="150" y="0" fill="#cbd5e1" class="mono" font-size="12">TypeScript · Next.js · Prisma · Turborepo · Docker</text>
+        <text x="140" y="0" fill="#475569" class="mono" font-size="12">:</text>
+        <text x="155" y="0" fill="#cbd5e1" class="mono" font-size="12">TypeScript · Python · Next.js · Prisma · Turborepo · Docker</text>
       </g>
 
       <!-- Line 4: Deployments -->
       <g transform="translate(0, 60)">
         <text x="0" y="0" fill="#10b981" class="mono" font-size="12" font-weight="bold">✔</text>
         <text x="18" y="0" fill="#94a3b8" class="mono" font-size="12">Flagships</text>
-        <text x="135" y="0" fill="#475569" class="mono" font-size="12">:</text>
-        <text x="150" y="0" fill="#818cf8" class="mono" font-size="12">ConstWare (SaaS) · SocialX (Marketplace) · Itz-Me</text>
+        <text x="140" y="0" fill="#475569" class="mono" font-size="12">:</text>
+        <text x="155" y="0" fill="#818cf8" class="mono" font-size="12">ConstWare (SaaS) · SocialX (Marketplace) · Itz-Me</text>
       </g>
     </g>
 
-    <!-- Command 2 Prompt with Typing / Rotating Command -->
-    <g transform="translate(0, 114)">
+    <!-- Command 2 Running Sequence with Dynamic Typing -->
+    <g transform="translate(0, 116)">
       <text x="0" y="0" fill="#38bdf8" class="mono" font-size="13" font-weight="700">❯</text>
       <text x="18" y="0" fill="#38bdf8" class="mono" font-size="13" font-weight="600">run</text>
       
-      <!-- Rotating actions in crisp clean white -->
+      <!-- Rotating Command Executions -->
       <g>
         <text x="54" y="0" fill="#f8fafc" class="mono" font-size="13">
           <animate attributeName="opacity" values="1;1;0;0;0;0;1" dur="9s" repeatCount="indefinite" />
-          quantaforze --build --product="ConstWare"
+          quantaforze --build --product="ConstWare" --monorepo=turbo
         </text>
       </g>
       <g>
         <text x="54" y="0" fill="#f8fafc" class="mono" font-size="13">
           <animate attributeName="opacity" values="0;0;1;1;0;0;0" dur="9s" repeatCount="indefinite" />
-          deploy --service="autonomous-agent-orchestrator"
+          deploy --service="autonomous-agent-orchestrator" --runtime=azure
         </text>
       </g>
       <g>
         <text x="54" y="0" fill="#f8fafc" class="mono" font-size="13">
           <animate attributeName="opacity" values="0;0;0;0;1;1;0" dur="9s" repeatCount="indefinite" />
-          benchmark --target="production-grade-microservices"
+          scale --target="production-grade-microservices" --nodes=cluster
         </text>
       </g>
 
-      <!-- Glowing Cyan Terminal Cursor -->
-      <rect x="495" y="-12" width="8" height="15" fill="#38bdf8" class="cursor" filter="url(#cleanTerminalGlow)" />
+      <!-- Glowing Cyan Cursor -->
+      <rect x="580" y="-12" width="8" height="15" fill="#38bdf8" class="cursor" filter="url(#termGlow)" />
     </g>
   </g>
 </svg>
