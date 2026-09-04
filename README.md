@@ -1,299 +1,257 @@
 <div align="center">
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- HERO SECTION -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ================================================================= -->
+<!-- 🚀 ANIMATED HERO BANNER (NO PROFILE PIC - PURE SLEEK TECH AESTHETIC) -->
+<!-- ================================================================= -->
 
-<br>
-
-<img src="https://avatars.githubusercontent.com/u/157504658?v=4" width="120" style="border-radius: 50%;" alt="Abhay Gupta"/>
+<a href="https://abhayanaiengineer.vercel.app/">
+  <img src="assets/header-banner.svg" width="100%" alt="Abhay Gupta — AI/ML Student & Full-Stack AI Builder"/>
+</a>
 
 <br><br>
 
-# ABHAY GUPTA
-
-**AI/ML Student · AI Builder · Developer**
-
-<sub>Building intelligent systems, AI agents, and useful digital products.</sub>
+### 🤖 `AI/ML Student & Full-Stack AI Engineer`
 
 <br>
 
-<a href="https://github.com/CodeOrbit26"><img src="https://img.shields.io/badge/GitHub-CodeOrbit26-0d1117?style=flat-square&logo=github&logoColor=white" alt="GitHub"/></a>&nbsp;&nbsp;
-<a href="https://abhayanaiengineer.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-abhayanaiengineer-c9a84c?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/></a>&nbsp;&nbsp;
-<a href="mailto:abhaygupta26nov11@gmail.com"><img src="https://img.shields.io/badge/Email-contact-7c6aef?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+<!-- ================================================================= -->
+<!-- 📊 LIVE STATUS & METRICS BADGES -->
+<!-- ================================================================= -->
 
-<br>
+<a href="https://github.com/CodeOrbit26">
+  <img src="https://img.shields.io/badge/Status-Open_to_Work-10b981?style=flat-square&logo=gitbook&logoColor=white" alt="Open to Work"/>
+</a>
+&nbsp;
+<a href="https://github.com/CodeOrbit26">
+  <img src="https://komarev.com/ghpvc/?username=CodeOrbit26&color=7c6aef&style=flat-square&label=Profile+Views" alt="Profile Views"/>
+</a>
+&nbsp;
+<a href="https://github.com/CodeOrbit26?tab=followers">
+  <img src="https://img.shields.io/github/followers/CodeOrbit26?label=Followers&style=flat-square&color=c9a84c&logo=github&logoColor=white" alt="GitHub Followers"/>
+</a>
+&nbsp;
+<a href="https://github.com/CodeOrbit26?tab=repositories">
+  <img src="https://img.shields.io/badge/Repositories-14_Public-238636?style=flat-square&logo=github&logoColor=white" alt="Repositories"/>
+</a>
+&nbsp;
+<a href="https://abhayanaiengineer.vercel.app/">
+  <img src="https://img.shields.io/badge/Portfolio-Live_Site-58a6ff?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/>
+</a>
 
-<img src="assets/divider.svg" width="600" alt=""/>
-
-</div>
-
-<br>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- ANIMATED TERMINAL HERO -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-<img src="assets/terminal-hero.svg" width="680" alt="Terminal Animation"/>
-</div>
-
-<br>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- INTRODUCTION -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-### `> About`
-
-</div>
-
-<p align="center">
-AI/ML student focused on <strong>NLP</strong>, <strong>Deep Learning</strong>, and <strong>Agentic AI</strong>.<br>
-I build practical software — from AI-powered tools and automation agents to full-stack web applications.<br>
-Currently exploring <strong>Azure AI</strong> services and designing systems where AI agents work autonomously.
-</p>
-
-<br>
-
-<div align="center">
-<img src="assets/divider.svg" width="600" alt=""/>
-</div>
-
-<br>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- WHAT I BUILD -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-### `> What I Build`
-
-</div>
-
-<br>
-
-<table align="center">
-<tr>
-<td align="center" width="200">
-<br>
-<strong>🤖 AI & Intelligence</strong><br><br>
-<sub>AI/ML · NLP · Deep Learning<br>LLMs · Agentic AI</sub>
 <br><br>
-</td>
-<td align="center" width="200">
-<br>
-<strong>⚙️ Automation</strong><br><br>
-<sub>AI-powered workflows<br>Agents · Automation systems</sub>
+
+<!-- Animated Mission / Quote Banner -->
+<img src="assets/quote-card.svg" width="100%" alt="Core Philosophy"/>
+
 <br><br>
-</td>
-<td align="center" width="200">
+
+<!-- Animated Futuristic Divider -->
+<img src="assets/divider.svg" width="100%" alt="Divider"/>
+
+</div>
+
 <br>
-<strong>🌐 Software</strong><br><br>
-<sub>Web applications · APIs<br>Full-stack products</sub>
+
+<!-- ================================================================= -->
+<!-- 💻 LIVE TERMINAL HERO (DIAGNOSTICS & ACTIVE RUNTIME) -->
+<!-- ================================================================= -->
+
+<div align="center">
+
+<img src="assets/terminal-hero.svg" width="100%" alt="Terminal Diagnostics Runtime"/>
+
 <br><br>
-</td>
-<td align="center" width="200">
-<br>
-<strong>☁️ Cloud</strong><br><br>
-<sub>Azure AI<br>Cloud-based AI systems</sub>
-<br><br>
-</td>
-</tr>
-</table>
 
-<br>
-
-<div align="center">
-<img src="assets/divider.svg" width="600" alt=""/>
-</div>
-
-<br>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- TECHNICAL FOCUS -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-### `> Technical Focus`
+<img src="assets/divider.svg" width="100%" alt="Divider"/>
 
 </div>
 
 <br>
 
+<!-- ================================================================= -->
+<!-- 👤 WHO I AM (CODE BLOCK INSPIRED BY SOMRAJ-DEV) -->
+<!-- ================================================================= -->
+
+### `> Who I Am`
+
+```javascript
+const abhay = {
+  name: "Abhay Gupta",
+  handle: "CodeOrbit26",
+  title: "AI/ML Student & Full-Stack AI Engineer",
+  focus: [
+    "Agentic AI & Autonomous Workflows",
+    "Natural Language Processing (NLP)",
+    "Deep Learning & Neural Architectures",
+    "Azure AI Cloud Services"
+  ],
+  stack: [
+    "TypeScript", "Python", "Next.js", 
+    "Express.js", "Prisma", "Docker", "Supabase"
+  ],
+  architecturePattern: "Turborepo Monorepo & Scalable Microservices",
+  launchedProjects: [
+    "ConstWare (Enterprise Construction SaaS)",
+    "SocialX (Social Engagement Marketplace)",
+    "Itz-Me (Modern Interactive Portfolio)"
+  ],
+  status: "Architecting autonomous agents & shipping resilient software",
+  portfolio: "https://abhayanaiengineer.vercel.app",
+  openToWork: true
+};
+```
+
+<br>
+
+<div align="center">
+<img src="assets/divider.svg" width="100%" alt="Divider"/>
+</div>
+
+<br>
+
+<!-- ================================================================= -->
+<!-- ⚡ REAL-TIME SYSTEM TELEMETRY (DYNAMIC ANIMATED GAUGES) -->
+<!-- ================================================================= -->
+
 <div align="center">
 
-| Domain | Technologies |
-|:---|:---|
-| **AI / ML** | NLP · Deep Learning · LLMs · Agentic AI |
-| **Cloud** | Azure · Azure AI |
-| **Frontend** | Next.js · TypeScript · JavaScript · Tailwind CSS · HTML/CSS |
-| **Backend** | Express.js · Next.js API Routes · Prisma · Supabase |
-| **Tooling** | Git · Docker · Vite · Turborepo |
-| **Languages** | TypeScript · JavaScript · Python · HTML · CSS |
+### `> Core Technical Telemetry`
+
+<br>
+
+<img src="assets/tech-telemetry.svg" width="100%" alt="System Capability Telemetry"/>
 
 </div>
 
 <br>
 
 <div align="center">
-<img src="assets/divider.svg" width="600" alt=""/>
+<img src="assets/divider.svg" width="100%" alt="Divider"/>
 </div>
 
 <br>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- FEATURED PROJECTS -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
+<!-- ================================================================= -->
+<!-- 🏗️ FEATURED PROJECTS -->
+<!-- ================================================================= -->
 
 ### `> Featured Projects`
 
-</div>
-
 <br>
 
-<table align="center">
-<tr>
-<td width="50%" valign="top">
-
-<br>
-
-<div align="center">
-
-**🏗️ ConstWare**
-
-</div>
-
-A high-performance construction management SaaS platform built for contractors, site supervisors, and enterprise clients. Structured as a **Turborepo monorepo** with web, API, mobile, and desktop targets.
-
-`TypeScript` `Next.js` `Express.js` `Prisma` `Supabase` `Tailwind CSS`
-
-<div align="center">
-
-[`→ Repository`](https://github.com/CodeOrbit26/ConstWare) &nbsp;·&nbsp; [`→ Live`](https://constware.vercel.app)
-
-</div>
-
-<br>
-
-</td>
-<td width="50%" valign="top">
-
-<br>
-
-<div align="center">
-
-**🔄 SocialX**
-
-</div>
-
-A premium engagement exchange marketplace for creators and brands. Users earn credits by completing social media campaigns and spend them to publish their own. Features anti-abuse engine, admin console, and verification flow.
-
-`TypeScript` `Next.js` `Prisma` `NextAuth` `Tailwind CSS` `Docker`
-
-<div align="center">
-
-[`→ Repository`](https://github.com/CodeOrbit26/SocialX) &nbsp;·&nbsp; [`→ Live`](https://socialx-tau-navy.vercel.app)
-
-</div>
-
-<br>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<br>
-
-<div align="center">
-
-**🌐 Itz-Me**
-
-</div>
-
-Personal portfolio website showcasing projects and professional identity. Built with a modern frontend stack and deployed on Vercel.
-
-`HTML` `JavaScript` `Vite`
-
-<div align="center">
-
-[`→ Repository`](https://github.com/CodeOrbit26/Itz-Me) &nbsp;·&nbsp; [`→ Live`](https://abhayanaiengineer.vercel.app)
-
-</div>
-
-<br>
-
-</td>
-<td width="50%" valign="top">
-
-<br>
-
-<div align="center">
-
-**🔭 More**
-
-</div>
-
-Check out all repositories for additional projects across AI, automation, and web development.
-
-<br>
-
-<div align="center">
-
-[`→ All Repositories`](https://github.com/CodeOrbit26?tab=repositories)
-
-</div>
-
-<br><br>
-
-</td>
-</tr>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">🏗️ ConstWare</h3>
+      <p align="center">
+        <a href="https://constware.vercel.app"><img src="https://img.shields.io/badge/Production-Live-10b981?style=flat-square&logo=vercel&logoColor=white" alt="Live Demo"/></a>
+        &nbsp;
+        <a href="https://github.com/CodeOrbit26/ConstWare"><img src="https://img.shields.io/badge/Turborepo-Monorepo-7c6aef?style=flat-square&logo=turborepo&logoColor=white" alt="Turborepo"/></a>
+      </p>
+      <p>
+        An enterprise construction management SaaS platform engineered for contractors, site supervisors, and project owners. Built with a unified <strong>Turborepo monorepo</strong> spanning web, API, mobile, and desktop targets.
+      </p>
+      <p>
+        <code>TypeScript</code> · <code>Next.js</code> · <code>Express.js</code> · <code>Prisma</code> · <code>Supabase</code> · <code>Tailwind CSS</code>
+      </p>
+      <p align="center">
+        <a href="https://constware.vercel.app"><strong>🔗 Live Demo</strong></a> &nbsp;·&nbsp; 
+        <a href="https://github.com/CodeOrbit26/ConstWare"><strong>📂 GitHub Repository</strong></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">🔄 SocialX</h3>
+      <p align="center">
+        <a href="https://socialx-tau-navy.vercel.app"><img src="https://img.shields.io/badge/Production-Live-10b981?style=flat-square&logo=vercel&logoColor=white" alt="Live Demo"/></a>
+        &nbsp;
+        <a href="https://github.com/CodeOrbit26/SocialX"><img src="https://img.shields.io/badge/Marketplace-NextAuth-c9a84c?style=flat-square&logo=next.js&logoColor=white" alt="Marketplace"/></a>
+      </p>
+      <p>
+        A social engagement exchange marketplace for content creators and brands. Features an automated campaign verification engine, credit-based exchange economy, anti-abuse fraud checks, and administrative controls.
+      </p>
+      <p>
+        <code>TypeScript</code> · <code>Next.js</code> · <code>Prisma</code> · <code>NextAuth</code> · <code>Tailwind CSS</code> · <code>Docker</code>
+      </p>
+      <p align="center">
+        <a href="https://socialx-tau-navy.vercel.app"><strong>🔗 Live Demo</strong></a> &nbsp;·&nbsp; 
+        <a href="https://github.com/CodeOrbit26/SocialX"><strong>📂 GitHub Repository</strong></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">🌐 Itz-Me</h3>
+      <p align="center">
+        <a href="https://abhayanaiengineer.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Vercel-58a6ff?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio Live"/></a>
+        &nbsp;
+        <a href="https://github.com/CodeOrbit26/Itz-Me"><img src="https://img.shields.io/badge/Vite-Fast_Build-c084fc?style=flat-square&logo=vite&logoColor=white" alt="Vite"/></a>
+      </p>
+      <p>
+        Personal engineering portfolio showcasing technical work, architectural designs, and projects. Optimized for fast render times, clean UI interactions, and mobile responsiveness.
+      </p>
+      <p>
+        <code>HTML5</code> · <code>JavaScript</code> · <code>CSS3</code> · <code>Vite</code>
+      </p>
+      <p align="center">
+        <a href="https://abhayanaiengineer.vercel.app"><strong>🔗 Live Demo</strong></a> &nbsp;·&nbsp; 
+        <a href="https://github.com/CodeOrbit26/Itz-Me"><strong>📂 GitHub Repository</strong></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">🔭 All Repositories</h3>
+      <p align="center">
+        <a href="https://github.com/CodeOrbit26?tab=repositories"><img src="https://img.shields.io/badge/GitHub-14_Repositories-1f293d?style=flat-square&logo=github&logoColor=white" alt="All Repos"/></a>
+      </p>
+      <p>
+        Explore my complete open-source workspace featuring AI experiments, automation scripts, microservices, and web development tooling.
+      </p>
+      <p>
+        <code>Python</code> · <code>TypeScript</code> · <code>Docker</code> · <code>Azure</code>
+      </p>
+      <p align="center">
+        <a href="https://github.com/CodeOrbit26?tab=repositories"><strong>📂 Browse All 14 Repositories →</strong></a>
+      </p>
+    </td>
+  </tr>
 </table>
 
 <br>
 
 <div align="center">
-<img src="assets/divider.svg" width="600" alt=""/>
+<img src="assets/divider.svg" width="100%" alt="Divider"/>
 </div>
 
 <br>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- TERMINAL PROFILE CARD -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ================================================================= -->
+<!-- 🛠️ IDENTITY & CAPABILITY INDEX -->
+<!-- ================================================================= -->
 
 <div align="center">
 
-### `> Terminal`
+### `> System Identity & Benchmark Matrix`
 
 <br>
 
-<img src="assets/terminal-profile.svg" width="680" alt="Terminal Profile Card"/>
+<img src="assets/terminal-profile.svg" width="100%" alt="System Identity and Capability Matrix"/>
 
 </div>
 
 <br>
 
 <div align="center">
-<img src="assets/divider.svg" width="600" alt=""/>
+<img src="assets/divider.svg" width="100%" alt="Divider"/>
 </div>
 
 <br>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- GITHUB STATS -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ================================================================= -->
+<!-- 📈 GITHUB METRICS & ANALYTICS -->
+<!-- ================================================================= -->
 
 <div align="center">
 
-### `> GitHub`
+### `> GitHub Activity & Stats`
 
 <br>
 
@@ -328,49 +286,45 @@ Check out all repositories for additional projects across AI, automation, and we
 <br>
 
 <div align="center">
-<img src="assets/divider.svg" width="600" alt=""/>
+<img src="assets/divider.svg" width="100%" alt="Divider"/>
 </div>
 
 <br>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- CONNECT -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- ================================================================= -->
+<!-- 📬 CONNECT & GET IN TOUCH -->
+<!-- ================================================================= -->
 
 <div align="center">
 
-### `> Connect`
+### `> Let's Connect`
+
+<p>Always open to discussing AI architecture, agentic systems, open-source projects, and engineering opportunities.</p>
 
 <br>
 
-<a href="https://github.com/CodeOrbit26"><img src="https://img.shields.io/badge/GitHub-CodeOrbit26-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>&nbsp;
-<a href="https://abhayanaiengineer.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-abhayanaiengineer-c9a84c?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>&nbsp;
-<a href="mailto:abhaygupta26nov11@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-7c6aef?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+<a href="https://github.com/CodeOrbit26">
+  <img src="https://img.shields.io/badge/GitHub-CodeOrbit26-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://abhayanaiengineer.vercel.app/">
+  <img src="https://img.shields.io/badge/Portfolio-abhayanaiengineer-c9a84c?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
+</a>
+&nbsp;&nbsp;
+<a href="mailto:abhaygupta26nov11@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Get_in_Touch-7c6aef?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
 
-</div>
+<br><br><br>
 
-<br>
-
-<div align="center">
-<img src="assets/divider.svg" width="600" alt=""/>
-</div>
-
-<br>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- FOOTER -->
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<div align="center">
+<!-- ================================================================= -->
+<!-- ⚡ FOOTER -->
+<!-- ================================================================= -->
 
 <sub>
-
-**BUILD · LEARN · AUTOMATE · SHIP**
-
+  <strong>ARCHITECT · AUTOMATE · SCALE · SHIP</strong>
+  <br><br>
+  ⚡ Designed &amp; Engineered with Precision by <a href="https://github.com/CodeOrbit26">Abhay Gupta</a>
 </sub>
-
-<br><br>
-
-<sub>⚡ Crafted with purpose</sub>
 
 </div>

@@ -1,58 +1,131 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230" width="100%" height="230">
+  <defs>
+    <linearGradient id="profileBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#111726" />
+    </linearGradient>
+
+    <linearGradient id="glowBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c6aef" stop-opacity="0.6">
+        <animate attributeName="stop-color" values="#7c6aef; #c9a84c; #00d2ff; #7c6aef" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#c9a84c" stop-opacity="0.3">
+        <animate attributeName="stop-color" values="#c9a84c; #00d2ff; #7c6aef; #c9a84c" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#00d2ff" stop-opacity="0.6">
+        <animate attributeName="stop-color" values="#00d2ff; #7c6aef; #c9a84c; #00d2ff" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="barGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c6aef" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c9a84c" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+
   <style>
-    text {
-      font-family: 'Courier New', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', monospace;
-    }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
+    .mono { font-family: 'SF Mono', 'Fira Code', 'Monaco', 'Courier New', monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
     .cursor { animation: blink 1s step-end infinite; }
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
   </style>
+
+  <!-- Container with subtle animated gradient border -->
+  <rect width="900" height="230" rx="12" fill="url(#profileBg)" stroke="url(#glowBorder)" stroke-width="1.5" />
+
+  <!-- Window Header -->
+  <rect width="900" height="34" rx="12" fill="#131926" />
+  <rect y="22" width="900" height="12" fill="#131926" />
+  <line x1="0" y1="34" x2="900" y2="34" stroke="#1f293d" stroke-width="1" />
+
+  <!-- Dots -->
+  <circle cx="22" cy="17" r="5" fill="#ff5f56" />
+  <circle cx="38" cy="17" r="5" fill="#ffbd2e" />
+  <circle cx="54" cy="17" r="5" fill="#27c93f" />
   
-  <rect width="800" height="200" rx="8" fill="#0d1117" stroke="#1b2028" stroke-width="1"/>
+  <text x="450" y="21" fill="#64748b" class="mono" font-size="11" text-anchor="middle">
+    identity.config.ts — CodeOrbit26
+  </text>
+
+  <!-- Content Split Grid (Left: Code Object, Right: Live Competency Meters) -->
   
-  <!-- Terminal header -->
-  <circle cx="20" cy="15" r="5" fill="#ff5f57"/>
-  <circle cx="36" cy="15" r="5" fill="#febc2e"/>
-  <circle cx="52" cy="15" r="5" fill="#28c840"/>
-  <text x="370" y="18" fill="#484f58" font-size="11" text-anchor="middle">profile — zsh</text>
-  
-  <!-- Command prompt -->
-  <text x="20" y="50" fill="#c9a84c" font-size="12">abhay@github</text>
-  <text x="118" y="50" fill="#484f58" font-size="12">:</text>
-  <text x="125" y="50" fill="#7c6aef" font-size="12">~</text>
-  <text x="135" y="50" fill="#484f58" font-size="12">$</text>
-  <text x="148" y="50" fill="#c9d1d9" font-size="12">whoami --verbose</text>
-  
-  <!-- Output -->
-  <text x="20" y="78" fill="#484f58" font-size="12">┌──────────────────────────────────────────────────────┐</text>
-  <text x="20" y="96" fill="#484f58" font-size="12">│</text>
-  <text x="40" y="96" fill="#6e7681" font-size="12">Name</text>
-  <text x="140" y="96" fill="#c9d1d9" font-size="12">Abhay Gupta</text>
-  
-  <text x="20" y="114" fill="#484f58" font-size="12">│</text>
-  <text x="40" y="114" fill="#6e7681" font-size="12">Role</text>
-  <text x="140" y="114" fill="#c9d1d9" font-size="12">AI/ML Student</text>
-  
-  <text x="20" y="132" fill="#484f58" font-size="12">│</text>
-  <text x="40" y="132" fill="#6e7681" font-size="12">Focus</text>
-  <text x="140" y="132" fill="#c9a84c" font-size="12">AI · NLP · Deep Learning · Agentic AI</text>
-  
-  <text x="20" y="150" fill="#484f58" font-size="12">│</text>
-  <text x="40" y="150" fill="#6e7681" font-size="12">Building</text>
-  <text x="140" y="150" fill="#7c6aef" font-size="12">Intelligent systems &amp; digital products</text>
-  
-  <text x="20" y="168" fill="#484f58" font-size="12">│</text>
-  <text x="40" y="168" fill="#6e7681" font-size="12">GitHub</text>
-  <text x="140" y="168" fill="#58a6ff" font-size="12">github.com/CodeOrbit26</text>
-  
-  <text x="20" y="186" fill="#484f58" font-size="12">└──────────────────────────────────────────────────────┘</text>
-  
-  <!-- Blinking cursor -->
-  <rect x="20" y="193" width="7" height="2" fill="#c9a84c" class="cursor"/>
+  <!-- LEFT COLUMN: Code Configuration -->
+  <g transform="translate(24, 60)">
+    <text x="0" y="0" fill="#f43f5e" class="mono" font-size="12" font-weight="600">export const</text>
+    <text x="95" y="0" fill="#38bdf8" class="mono" font-size="12" font-weight="600">developer</text>
+    <text x="175" y="0" fill="#e2e8f0" class="mono" font-size="12">=</text>
+    <text x="190" y="0" fill="#f1f5f9" class="mono" font-size="12">{</text>
+
+    <g transform="translate(18, 20)">
+      <text x="0" y="0" fill="#94a3b8" class="mono" font-size="11.5">handle:</text>
+      <text x="80" y="0" fill="#a7f3d0" class="mono" font-size="11.5">"CodeOrbit26"</text>
+      <text x="185" y="0" fill="#64748b" class="mono" font-size="11.5">,</text>
+
+      <text x="0" y="20" fill="#94a3b8" class="mono" font-size="11.5">focusArea:</text>
+      <text x="80" y="20" fill="#fde047" class="mono" font-size="11.5">["Agentic AI", "NLP", "Azure AI"]</text>
+      <text x="360" y="20" fill="#64748b" class="mono" font-size="11.5">,</text>
+
+      <text x="0" y="40" fill="#94a3b8" class="mono" font-size="11.5">coreStack:</text>
+      <text x="80" y="40" fill="#c084fc" class="mono" font-size="11.5">["TypeScript", "Next.js", "Docker"]</text>
+      <text x="365" y="40" fill="#64748b" class="mono" font-size="11.5">,</text>
+
+      <text x="0" y="60" fill="#94a3b8" class="mono" font-size="11.5">architecture:</text>
+      <text x="105" y="60" fill="#38bdf8" class="mono" font-size="11.5">"Turborepo Monorepo &amp; Microservices"</text>
+      <text x="400" y="60" fill="#64748b" class="mono" font-size="11.5">,</text>
+
+      <text x="0" y="80" fill="#94a3b8" class="mono" font-size="11.5">openToWork:</text>
+      <text x="95" y="80" fill="#34d399" class="mono" font-size="11.5" font-weight="bold">true</text>
+    </g>
+
+    <text x="0" y="122" fill="#f1f5f9" class="mono" font-size="12">};</text>
+    <rect x="20" y="112" width="7" height="13" fill="#c9a84c" class="cursor" />
+  </g>
+
+  <!-- Vertical Divider Line -->
+  <line x1="490" y1="46" x2="490" y2="215" stroke="#1f293d" stroke-width="1" stroke-dasharray="4,4" />
+
+  <!-- RIGHT COLUMN: Animated Telemetry & Focus Indicators -->
+  <g transform="translate(515, 60)">
+    <text x="0" y="0" fill="#c9a84c" class="mono" font-size="11.5" font-weight="700" letter-spacing="1">
+      // SYSTEM CAPABILITY INDEX
+    </text>
+
+    <!-- Bar 1: Agentic & Intelligent Systems -->
+    <g transform="translate(0, 24)">
+      <text x="0" y="0" fill="#e2e8f0" class="mono" font-size="11">Agentic AI &amp; NLP</text>
+      <text x="340" y="0" fill="#38bdf8" class="mono" font-size="11" text-anchor="end">94%</text>
+      <rect x="0" y="6" width="340" height="5" rx="2.5" fill="#1e293b" />
+      <rect x="0" y="6" width="320" height="5" rx="2.5" fill="url(#barGrad1)">
+        <animate attributeName="width" values="100;320;300;320" dur="4s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Bar 2: Full-Stack Engineering -->
+    <g transform="translate(0, 52)">
+      <text x="0" y="0" fill="#e2e8f0" class="mono" font-size="11">Full-Stack (Next.js / TypeScript)</text>
+      <text x="340" y="0" fill="#c9a84c" class="mono" font-size="11" text-anchor="end">92%</text>
+      <rect x="0" y="6" width="340" height="5" rx="2.5" fill="#1e293b" />
+      <rect x="0" y="6" width="312" height="5" rx="2.5" fill="url(#barGrad2)">
+        <animate attributeName="width" values="120;312;295;312" dur="4.5s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Bar 3: Cloud & Container Systems -->
+    <g transform="translate(0, 80)">
+      <text x="0" y="0" fill="#e2e8f0" class="mono" font-size="11">Azure AI &amp; Docker Pipelines</text>
+      <text x="340" y="0" fill="#a855f7" class="mono" font-size="11" text-anchor="end">88%</text>
+      <rect x="0" y="6" width="340" height="5" rx="2.5" fill="#1e293b" />
+      <rect x="0" y="6" width="300" height="5" rx="2.5" fill="url(#barGrad1)">
+        <animate attributeName="width" values="80;300;285;300" dur="5s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <text x="0" y="122" fill="#64748b" class="mono" font-size="10">
+      ⚡ CONTINUOUSLY BENCHMARKED &amp; DEPLOYED
+    </text>
+  </g>
 </svg>

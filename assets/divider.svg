@@ -1,18 +1,46 @@
-<svg width="800" height="2" viewBox="0 0 800 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="8" viewBox="0 0 900 8" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="divider-gradient" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0d1117" stop-opacity="0"/>
-      <stop offset="15%" stop-color="#c9a84c" stop-opacity="0.4">
-        <animate attributeName="stop-opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.15">
-        <animate attributeName="stop-opacity" values="0.1;0.2;0.1" dur="3s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="85%" stop-color="#7c6aef" stop-opacity="0.3">
-        <animate attributeName="stop-opacity" values="0.15;0.4;0.15" dur="5s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    <!-- Background subtle track -->
+    <linearGradient id="trackGrad" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#090d16" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#7c6aef" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#c9a84c" stop-opacity="0.4"/>
+      <stop offset="80%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0"/>
     </linearGradient>
+
+    <!-- Traveling Laser Beam Gradient -->
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c6aef" stop-opacity="0" />
+      <stop offset="40%" stop-color="#7c6aef" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="60%" stop-color="#c9a84c" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="glowLaser" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
-  <rect width="800" height="1" fill="url(#divider-gradient)" rx="0.5"/>
+
+  <!-- Track -->
+  <line x1="0" y1="4" x2="900" y2="4" stroke="url(#trackGrad)" stroke-width="1" />
+
+  <!-- Animated Traveling Laser Beam -->
+  <rect y="2" width="220" height="4" rx="2" fill="url(#laserGrad)" filter="url(#glowLaser)">
+    <animate attributeName="x" values="-220; 900" dur="3.5s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Center Diamond with Pulsing Halo -->
+  <g transform="translate(450, 4)">
+    <circle cx="0" cy="0" r="3" fill="#c9a84c">
+      <animate attributeName="r" values="2.5; 4.5; 2.5" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#c9a84c; #ffffff; #7c6aef; #c9a84c" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#7c6aef" stroke-width="1" opacity="0.6">
+      <animate attributeName="r" values="4; 9; 4" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.8; 0.1; 0.8" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
 </svg>

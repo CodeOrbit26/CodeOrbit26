@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 80" width="100%" height="80">
+  <defs>
+    <linearGradient id="quoteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#121826" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <linearGradient id="textShine" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="50%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+      <animateTransform attributeName="gradientTransform" type="translate" from="-200,0" to="200,0" dur="6s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .mono { font-family: 'SF Mono', 'Fira Code', 'Monaco', monospace; }
+  </style>
+
+  <!-- Box -->
+  <rect width="900" height="80" rx="10" fill="url(#quoteGrad)" stroke="#1e273b" stroke-width="1" />
+
+  <!-- Side Accent Bars with Animation -->
+  <rect x="0" y="10" width="4" height="60" rx="2" fill="#7c6aef">
+    <animate attributeName="fill" values="#7c6aef; #c9a84c; #00d2ff; #7c6aef" dur="5s" repeatCount="indefinite" />
+  </rect>
+  <rect x="896" y="10" width="4" height="60" rx="2" fill="#c9a84c">
+    <animate attributeName="fill" values="#c9a84c; #00d2ff; #7c6aef; #c9a84c" dur="5s" repeatCount="indefinite" />
+  </rect>
+
+  <g transform="translate(450, 32)" text-anchor="middle">
+    <text y="-8" fill="#7c6aef" class="mono" font-size="10.5" font-weight="700" letter-spacing="2">
+      // CORE PHILOSOPHY
+    </text>
+    <text y="20" fill="url(#textShine)" class="sans" font-size="14.5" font-weight="500" font-style="italic">
+      "Architecting intelligent autonomous agents and production-grade software that bridge AI theory into tangible impact."
+    </text>
+  </g>
+</svg>
