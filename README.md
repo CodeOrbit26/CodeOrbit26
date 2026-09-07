@@ -5,7 +5,7 @@
 <!-- ================================================================= -->
 
 <a href="https://abhayanaiengineer.vercel.app/">
-  <img src="assets/banner.svg" width="100%" alt="Abhay Gupta — Co-Founder @ Quantaforze | AI & Systems Engineer"/>
+  <img src="assets/hero-banner.svg" width="100%" alt="Abhay Gupta — Co-Founder @ Quantaforze | AI & Systems Engineer"/>
 </a>
 
 <br><br>
@@ -46,10 +46,6 @@
 
 <br><br>
 
-<!-- Sleek Minimalist Vision Banner -->
-<img src="assets/quote-card.svg" width="100%" alt="Architectural Vision"/>
-
-<br><br>
 
 <!-- Minimal Laser Hairline Divider -->
 <img src="assets/divider.svg" width="100%" alt="Divider"/>
