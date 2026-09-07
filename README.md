@@ -165,27 +165,7 @@
 
 <br>
 
-<!-- ================================================================= -->
-<!-- 🛠️ IDENTITY & CAPABILITY INDEX -->
-<!-- ================================================================= -->
 
-<div align="center">
-
-### `> System Identity & Benchmark Matrix`
-
-<br>
-
-<img src="assets/terminal-profile.svg" width="100%" alt="System Identity and Capability Matrix"/>
-
-</div>
-
-<br>
-
-<div align="center">
-<img src="assets/divider.svg" width="100%" alt="Divider"/>
-</div>
-
-<br>
 
 <!-- ================================================================= -->
 <!-- 📈 GITHUB METRICS & ANALYTICS -->
