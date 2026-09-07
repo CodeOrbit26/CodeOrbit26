@@ -5,7 +5,7 @@
 <!-- ================================================================= -->
 
 <a href="https://abhayanaiengineer.vercel.app/">
-  <img src="assets/header-banner.svg" width="100%" alt="Abhay Gupta — Co-Founder @ Quantaforze | AI & Systems Engineer"/>
+  <img src="assets/banner.svg" width="100%" alt="Abhay Gupta — Co-Founder @ Quantaforze | AI & Systems Engineer"/>
 </a>
 
 <br><br>
@@ -36,7 +36,7 @@
   <img src="https://img.shields.io/github/followers/CodeOrbit26?label=Followers&style=flat-square&color=6366f1&logo=github&logoColor=white" alt="Followers"/>
 </a>
 &nbsp;
-<a href="https://www.linkedin.com/in/abhay-gupta-5ba2b737a">
+<a href="https://www.linkedin.com/in/abhaygupta26">
   <img src="https://img.shields.io/badge/LinkedIn-Abhay_Gupta-0284c7?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
 &nbsp;
@@ -310,7 +310,7 @@ abhay = {
 
 <br>
 
-<a href="https://www.linkedin.com/in/abhay-gupta-5ba2b737a">
+<a href="https://www.linkedin.com/in/abhaygupta26">
   <img src="https://img.shields.io/badge/LinkedIn-Abhay_Gupta-0284c7?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
 &nbsp;&nbsp;
