@@ -55,59 +55,19 @@
 <br>
 
 <!-- ================================================================= -->
-<!-- 💻 LIVE TERMINAL HERO (DIAGNOSTICS & RUNTIME) -->
+<!-- 👤 WHO I AM (INTERACTIVE PYTHON TERMINAL) -->
 <!-- ================================================================= -->
+
+### `> Who I Am`
 
 <div align="center">
 
-<img src="assets/terminal-hero.svg" width="100%" alt="Quantaforze Terminal Diagnostics"/>
+<img src="assets/terminal-whoami.svg" width="100%" alt="Who I Am — Abhay Gupta"/>
 
 <br><br>
 
 <img src="assets/divider.svg" width="100%" alt="Divider"/>
 
-</div>
-
-<br>
-
-<!-- ================================================================= -->
-<!-- 👤 WHO I AM (CODE DEFINITION) -->
-<!-- ================================================================= -->
-
-### `> Who I Am`
-
-```python
-abhay = {
-    "name": "Abhay Gupta",
-    "handle": "CodeOrbit26",
-    "role": "Co-Founder @ Quantaforze",
-    "discipline": "AI/ML Systems & Full-Stack Architect",
-    "focus": [
-        "Agentic AI & Autonomous Workflows",
-        "Natural Language Processing (NLP)",
-        "Deep Learning & Neural Architectures",
-        "Azure AI Cloud Infrastructure",
-    ],
-    "stack": [
-        "Python", "TypeScript", "Next.js", 
-        "Express.js", "Prisma", "Docker", "Supabase",
-    ],
-    "architecture": "Turborepo Monorepos & High-Availability Microservices",
-    "flagships": [
-        "ConstWare (Enterprise Construction SaaS)",
-        "SocialX (Social Engagement Marketplace)",
-        "Itz-Me (Engineering Portfolio)",
-    ],
-    "status": "Building autonomous systems and scaling technical ventures",
-    "portfolio": "https://abhayanaiengineer.vercel.app",
-    "open_to_collaborate": True,
-}
-```
-
-<br>
-
-<div align="center">
-<img src="assets/divider.svg" width="100%" alt="Divider"/>
 </div>
 
 <br>
