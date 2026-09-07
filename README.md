@@ -112,27 +112,6 @@ abhay = {
 
 <br>
 
-<!-- ================================================================= -->
-<!-- ⚡ REAL-TIME SYSTEM TELEMETRY (SLEEK GAUGES) -->
-<!-- ================================================================= -->
-
-<div align="center">
-
-### `> Core Technical Telemetry`
-
-<br>
-
-<img src="assets/tech-telemetry.svg" width="100%" alt="System Capability Telemetry"/>
-
-</div>
-
-<br>
-
-<div align="center">
-<img src="assets/divider.svg" width="100%" alt="Divider"/>
-</div>
-
-<br>
 
 <!-- ================================================================= -->
 <!-- 🏗️ FEATURED PROJECTS -->
